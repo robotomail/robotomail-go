@@ -119,7 +119,7 @@ func (c *Client) newRequest(ctx context.Context, method, path string, query url.
 		return nil, err
 	}
 	req.Header.Set("Accept", "application/json")
-	req.Header.Set("User-Agent", "robotomail-go/0.1.0")
+	req.Header.Set("User-Agent", "robotomail-go/0.2.0")
 	if c.apiKey != "" {
 		req.Header.Set("Authorization", "Bearer "+c.apiKey)
 	}

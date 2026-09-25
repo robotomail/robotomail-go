@@ -11,7 +11,7 @@ Give your application a real email address. The official Robotomail SDK covers a
 The initial release is installable from the tagged GitHub repository:
 
 ```sh
-go get github.com/robotomail/robotomail-go@v0.1.0
+go get github.com/robotomail/robotomail-go@v0.2.0
 ```
 
 Go modules use this repository and its version tags directly.
