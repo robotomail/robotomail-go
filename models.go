@@ -197,6 +197,7 @@ type UpdateMailboxRequest struct {
 type SendMessageRequest struct {
 	To          []string           `json:"to"`
 	Cc          *[]string          `json:"cc,omitempty"`
+	Bcc         *[]string          `json:"bcc,omitempty"`
 	Subject     string             `json:"subject"`
 	BodyText    string             `json:"bodyText"`
 	BodyHtml    *string            `json:"bodyHtml,omitempty"`
@@ -215,6 +216,7 @@ type Message struct {
 	FromAddress              string         `json:"fromAddress"`
 	ToAddresses              []string       `json:"toAddresses"`
 	CcAddresses              []string       `json:"ccAddresses"`
+	BccAddresses             []string       `json:"bccAddresses"`
 	Subject                  string         `json:"subject"`
 	BodyText                 string         `json:"bodyText"`
 	BodyHtml                 *string        `json:"bodyHtml"`
